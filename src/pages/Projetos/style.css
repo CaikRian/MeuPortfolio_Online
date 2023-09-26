@@ -1,0 +1,171 @@
+@keyframes carregando {
+
+    0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+    
+}
+#PageProjetos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20vh;
+}
+.ConteinerProjetos{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    width: 100%;
+    min-height: 75vh;
+    background: linear-gradient(248deg, #0299B8 0%, #9118F5 61%);
+    transition: 2s;
+    box-shadow: black 0px 2px 10px 1px;
+    
+}
+.BoxProjeto{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 200px;
+    height: 230px;
+    background-color: rgba(0, 0, 0, 0);
+    background-size: 100%;
+    box-shadow: black 0px 2px 10px 1px;
+    background-position: top;
+    border-radius: 20px 20px 0 0;
+    transition: 1s;
+    background-size: cover;
+}
+.BoxProjeto:hover{
+    transform: scale(0.9);
+    transition: 1s;
+    box-shadow: black 0px 2px 100px 1px;
+    cursor: pointer;
+    
+}
+.BoxProjeto:hover .TituloProjetos{
+    transform: scale(1.2);
+    transition: 1s;
+    border-radius: 20px;
+}
+.TituloProjetos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(26, 26, 26);
+    transition: 1s;
+}
+.loading{
+    margin-bottom: 50px;
+    width: 50px;
+    height: 50px;
+    border: solid 7px rgba(0, 0, 0, 0.278);
+    border-top-color: #ffffff;
+    border-radius: 100%;
+    animation: carregando 2s linear infinite;  
+}
+#OnlyFilms{
+    background-image: url('./img/Icon_OnlyFilms.png');
+}
+#HelpEarth{
+    background-image: url('./img/Icon_HelpeEarth.png');
+}
+
+#Tela2Projetos{
+    display: none;
+    background: linear-gradient(to left, #029ab883 0%, #9218f5 60%), url('./img/Icon_OnlyFilms.png');
+    justify-content: space-between;
+    
+}
+.Projeto{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 40%;
+}
+#NomeProjeto{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 50px;
+    background-color: rgb(26, 26, 26);
+    box-shadow: black 0px 2px 10px 1px;
+    border-radius: 0px 20px 20px 0;
+   margin-bottom: 10%;
+}
+#ProjetoExt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 350px;
+    margin-right: 20%;
+}
+.SobreProjeto{
+    display: flex;
+    padding: 1%;
+    background-color: rgb(26, 26, 26);
+    box-shadow: black 0px 2px 10px 1px;
+    margin-top: 5%;
+    margin-bottom: 1%;
+   
+}
+#ImgProjeto{
+    width: 100%;
+    height: 90%;
+    background-position: center;
+    background-size: cover;
+    box-shadow: black 0px 2px 10px 1px;
+    margin-bottom: 5%;
+}
+#BtnVoltarProj{
+    margin-bottom: 10%;
+    box-shadow: black 0px 2px 10px 1px;
+    color: black;
+    padding: 5px;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+}
+@media (max-width: 1100px){
+
+    #ProjetoExt{
+        margin: 0%;
+    }
+
+}
+@media (max-width: 780px){
+    #Tela1Projetos{
+        flex-direction: column;
+    }
+    .Projeto{
+        width: 100%;
+        margin-bottom: 10vh;
+
+    }
+    .SpanProjetos{
+        margin: 5vh;
+    }
+    .BoxProjeto{
+        margin: 10vh;
+        width: 40vh;
+        
+    }
+    #NomeProjeto{
+        border-radius: 0%;
+    } 
+    #Tela2Projetos{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+       
+    }
+    #ImgProjeto{
+        border-radius: 100%;
+    }
+
+}

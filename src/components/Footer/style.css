@@ -1,0 +1,32 @@
+
+Footer{
+   display: flex;
+    min-height: 15vh;
+    background: linear-gradient(248deg, #0299B8 0%, #9118F5 61%);
+    box-shadow: 0px 0px 10px 2px black;
+    color: white;
+    align-items: center;
+    justify-content: space-around;
+    
+    
+}
+@media (max-width: 500px){
+    Footer{
+
+        flex-direction: column;
+        align-items: stretch;
+        
+
+    }
+    Footer *{
+        font-size: 15px;
+        
+    }
+    Footer span{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+
+}
