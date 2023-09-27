@@ -71,7 +71,7 @@ function Home() {
                 <h1 id='TitSobreMim'>Sobre mim</h1>
                 <span>&nbsp;Meu primeiro contato com a tecnologia foi aos 12 anos, quando ganhei o meu primeiro celular. 
                     Achava um máximo, a ideia de uma “pequena caixa” carregar tanto conteúdo. Desde então, sempre tive a curiosidade 
-                    e a vontade de entender aprender como é o sistema por trás daqueles aplicativos e sites que tanto acessamos.
+                    de entender como é o sistema por trás daqueles aplicativos e sites que tanto acessamos.
                     </span>
                     <br/>
                 <span>&nbsp;Nos meus 15 anos, consegui passar no vestibular para o curso técnico de desenvolvimento de sistemas integrado 
