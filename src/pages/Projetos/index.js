@@ -28,7 +28,7 @@ function VerProjetos(opcao, projeto){
             NomeProjeto.textContent = 'OnlyFilms';
             DescriçãoProjeto.textContent = 'Home page simples de um site fictício de aluguel e venda de filmes.';
             linguSoftUtil.textContent = 'HTML e CSS.';
-            Tela2.style.background = "linear-gradient(to left, #029ab883 0%, #9218f5 60%), url('"+Icon_OnlyFilms+"')";
+            Tela2.style.background = "linear-gradient(to left, rgba(26, 26, 26, 0.485) 0%, rgb(26, 26, 26) 60%), url('"+Icon_OnlyFilms+"')";
             ImgProjeto.style.backgroundImage = "url("+Icon_OnlyFilms+")";
 
         }
@@ -37,9 +37,10 @@ function VerProjetos(opcao, projeto){
             NomeProjeto.textContent = 'HelpEarth';
             DescriçãoProjeto.textContent = 'Site fictício de nóticias focadas ao meio-ambiente.';
             linguSoftUtil.textContent = 'HTML, CSS e JavaScript';
-            Tela2.style.background = "linear-gradient(to left, #029ab883 0%, #9218f5 60%), url('"+Icon_HelpeEarth+"')";
+            Tela2.style.background = "linear-gradient(to left, rgba(26, 26, 26, 0.485) 0%, rgb(26, 26, 26) 60%), url('"+Icon_HelpeEarth+"')";
             ImgProjeto.style.backgroundImage = "url("+Icon_HelpeEarth+")";
         }
+        
 
         
     } if (opcao === 2) {

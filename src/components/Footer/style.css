@@ -1,10 +1,9 @@
 
 Footer{
    display: flex;
-    min-height: 15vh;
-    background: linear-gradient(248deg, #0299B8 0%, #9118F5 61%);
+    min-height: 10vh;
     box-shadow: 0px 0px 10px 2px black;
-    color: white;
+    background-color: rgb(220, 220, 220);
     align-items: center;
     justify-content: space-around;
     

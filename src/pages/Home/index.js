@@ -8,7 +8,7 @@ import Icon_People from './Img/Icon_People.svg';
 function Home() {
         
     
-            window.addEventListener("scroll", function() {
+  /*          window.addEventListener("scroll", function() {
 
                 const Section2 = document.getElementById('section2');
                 const Section3 = document.getElementById('section3');
@@ -43,70 +43,8 @@ function Home() {
                 }
     
                 
-                }}); 
+               }}); */
 
-    function  mudaEtec() {
-            const TitInst = document.getElementById('TitInst');
-            const CursoInst = document.getElementById('CursoInst');
-            const StatusInst = document.getElementById('StatusInst');
-            const DataInst = document.getElementById('DataInst');
-            const BtnInst = document.getElementById('ETEC');
-            const BtnInst2 = document.getElementById('UNIP');
-            const BtnInst3 = document.getElementById('FMU');
-
-            TitInst.textContent = 'ETEC';
-            CursoInst.textContent = 'Análise e Desenvolvimento de Sistemas';
-            StatusInst.textContent = 'Concluído';
-            DataInst.textContent = '01/2019 até 12/2021';
-            BtnInst.style.boxShadow = 'rgb(255, 255, 255) 0px 2px 10px 1px';
-            BtnInst2.style.boxShadow = 'rgba(255, 255, 255, 0) 0px 2px 10px 1px';
-            BtnInst3.style.boxShadow = 'rgba(255, 255, 255, 0) 0px 2px 10px 1px';
-            BtnInst.style.transform = 'scale(1.2)';
-            BtnInst2.style.transform = 'none';
-            BtnInst3.style.transform = 'none';
-    }
-    function  mudaUnip() {
-        const TitInst = document.getElementById('TitInst');
-        const CursoInst = document.getElementById('CursoInst');
-        const StatusInst = document.getElementById('StatusInst');
-        const DataInst = document.getElementById('DataInst');
-        const BtnInst = document.getElementById('ETEC');
-        const BtnInst2 = document.getElementById('UNIP');
-        const BtnInst3 = document.getElementById('FMU');
-        BtnInst.style.transform = 'none';
-        BtnInst2.style.transform = 'scale(1.2)';
-        BtnInst3.style.transform = 'none';
-
-    
-        TitInst.textContent = 'UNIP';
-        CursoInst.textContent = 'Ciência da Computação';
-        StatusInst.textContent = 'Trancado';
-        DataInst.textContent = '01/2022 até 06/2022';
-        BtnInst.style.boxShadow = 'rgba(255, 255, 255, 0) 0px 2px 10px 1px';
-        BtnInst2.style.boxShadow = 'rgb(255, 255, 255) 0px 2px 10px 1px';
-        BtnInst3.style.boxShadow = 'rgba(255, 255, 255, 0) 0px 2px 10px 1px';
-       
-    }
-    function  mudaFmu() {
-        const TitInst = document.getElementById('TitInst');
-        const CursoInst = document.getElementById('CursoInst');
-        const StatusInst = document.getElementById('StatusInst');
-        const DataInst = document.getElementById('DataInst');
-        const BtnInst = document.getElementById('ETEC');
-        const BtnInst2 = document.getElementById('UNIP');
-        const BtnInst3 = document.getElementById('FMU');
-        BtnInst.style.transform = 'none';
-        BtnInst2.style.transform = 'none';
-        BtnInst3.style.transform = 'scale(1.2)';
-
-        TitInst.textContent = 'FMU';
-        CursoInst.textContent = 'Ciência da Computação';
-        StatusInst.textContent = 'Em Andamento';
-        DataInst.textContent = '07/2022 até 06/2026';
-        BtnInst.style.boxShadow = 'rgba(255, 255, 255, 0) 0px 2px 10px 1px';
-        BtnInst2.style.boxShadow = 'rgba(255, 255, 255, 0) 0px 2px 10px 1px';
-        BtnInst3.style.boxShadow = 'rgb(255, 255, 255) 0px 2px 10px 1px';
-        }
 
     return(
 
@@ -114,7 +52,7 @@ function Home() {
            <article id='section1'>
             <div id='titulo'>
            <span className='titFrase'>Oi, tudo bem? Meu nome é Caik.</span>
-           <span className='titFrase'>Seja bem-vindo(a) ao meu portfólio online. :)</span>
+           <span className='titFrase'>Seja bem-vindo(a) ao meu portfólio online.</span>
            
            <div className='opcoes'>
             <Link to='https://github.com/CaikRian'><img src={Icon_GitHub}></img></Link>
@@ -150,27 +88,34 @@ function Home() {
             <div id='TitFormAcad' className='titulo'>Formação Acadêmica</div>
             <div className='CampoFAcad'>
                 <div className='instituicao'>
-                    <div id='ETEC' className='ImgInstituicao' onClick={mudaEtec}></div>
+                    <div id='ETEC' className='ImgInstituicao'>
+                        <span id='TitInst'>ETEC</span>
+                        <span id='CursoInst'>Análise e Desenvolvimento de Sistemas</span>
+                        <span id='StatusInst'>Concluído</span>
+                        <span id='DataInst'>01/2019 até 12/2021</span>
+                    </div>
                     
                 </div>
-                <div className='pontinhos'> </div>
+                
                 <div className='instituicao'>
-                    <div id='UNIP' className='ImgInstituicao' onClick={mudaUnip}></div>
+                    <div id='UNIP' className='ImgInstituicao' >
+                        <span id='TitInst'>UNIP</span>
+                        <span id='CursoInst'>Ciência da Computação</span>
+                        <span id='StatusInst'>Trancado</span>
+                        <span id='DataInst'>01/2022 até 06/2022</span>
+                    </div>
                     
                 </div>
-                <div className='pontinhos'></div>
+               
                 <div className='instituicao'>
-                    <div id='FMU' className='ImgInstituicao' onClick={mudaFmu}></div>
+                    <div id='FMU' className='ImgInstituicao'>
+                        <span id='TitInst'>FMU</span>
+                        <span id='CursoInst'>Ciência da Computação</span>
+                        <span id='StatusInst'>Em Andamento</span>
+                        <span id='DataInst'>07/2022 até 06/2026</span>
+                    </div>
                     
                 </div>
-            </div>
-            <div id='FundoInst'>
-            <div className='DescFAcad'>
-                <h3><div className='TextoInst'>Instituição:</div><span id='TitInst'>ETEC</span></h3>
-                <h3><div className='TextoInst'>Curso:</div><span id='CursoInst'>Análise e Desenvolvimento de Sistemas</span></h3>
-                <h3><div className='TextoInst'>Status:</div><span id='StatusInst'>Concluído</span></h3>
-                <h3><div className='TextoInst'>Data:</div><span id='DataInst'>01/2019 até 12/2021</span></h3>
-            </div>
             </div>
             </article>
             <article id='section4' className='section4'>
