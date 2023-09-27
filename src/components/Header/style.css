@@ -10,9 +10,7 @@ header{
     align-items: center;
     justify-content: space-between;
 }
-header a+a{
-    margin-left: 5vh;
-}
+
 #menuResponsivo{
     display: none;
 }
@@ -146,9 +144,7 @@ header a+a{
         justify-content: center;
     
     }
-    header a+a{
-        margin-left: 0;
-    }
+  
 }
 @media (max-width: 500px){
     #OpcoesResp a{

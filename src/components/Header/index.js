@@ -33,6 +33,7 @@ function Header(){
             
             <Link to="/" class="logo">CK</Link>
             <div className = "menu" id='menuPC'>
+                <a href='#'>Home</a>
                 <a href='/#TitSobreMim'>Sobre mim</a>
                 <a href='/#TitFormAcad'>Formação Acadêmica</a>
                 <a href='/#TitExpProf'>Exp. Profissional</a>
