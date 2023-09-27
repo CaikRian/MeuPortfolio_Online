@@ -1,34 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Playfair Display', serif;
-    font-weight: bold;
-    color: white;
+    font-family:  arial;
+    color: black;
     text-align: justify;
     font-size: 20px;
     scroll-behavior: smooth;
     scroll-margin-top: 16vh;
-    
-    
-    
     
 }
 
 main{ 
     display: flex;
     flex-direction: column;
-    min-height: 75vh;
-    padding-top: 15vh;
-    background-color: rgb(26, 26, 26);
+    background-color: rgb(220, 220, 220);
     color: white;
     padding-bottom: 5%;
     
 }
 h1{
     font-family: 'Righteous', arial;
-    color: rgb(26, 26, 26);
+    color: rgb(220, 220, 220);
     background: linear-gradient(248deg, #0299B8 0%, #9118F5 61%);
     box-shadow: black 0px 2px 10px 1px;
     
@@ -58,8 +54,8 @@ h3{
 #section1{
     display: flex;
     max-width: 100%;
-    min-height: 85vh;
-    background: linear-gradient(248deg, #0299B8 0%, #9118F5 61%);
+    min-height: 100vh;
+    background: linear-gradient(248deg, #029ab8f8 0%, #9118F5 60%);
     background-size: 200% 200%;
     animation: Home 5s linear infinite;
 }
@@ -67,14 +63,17 @@ h3{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 60%;
-    background: linear-gradient(90deg, rgb(26, 26, 26) 85%, #9218f500 100%);
+    width: 70%;
+    background: linear-gradient(90deg, rgb(220, 220, 220) 70%, #9218f500 100%);
 }
 .titFrase{
+    display: flex;
+    justify-content: center;
     font-size: 30px;
-    margin-left: 5%;
-    margin-right: 10%;
-    color: #ffffff;
+    
+    margin-right: 40vh;
+    font-family: 'Righteous', arial;
+    
    
 }
 
@@ -89,21 +88,20 @@ h3{
     align-items: center;
     justify-content: center;
     font-size: 200px;
-    color: rgb(26, 26, 26);
-    height: 75vh;
+    color: rgb(220, 220, 220);
+    height: 100vh;
     
 }
 .opcoes{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-color: #0299B8;
-    background: linear-gradient(248deg, #0299B8 0%, #9118F5 61%);
-    box-shadow: 0px 0px 10px 2px black;
+    background: linear-gradient(248deg, #029ab8f8 0%, #9118F5 60%);
+    box-shadow: black 0px 2px 10px 1px;
     border-radius: 0 100px 100px 0px;
     margin-top: 13%;
-    height: 13%;
-    width: 80%;
+    height: 10%;
+    width: 60%;
     
 }
 
@@ -122,7 +120,7 @@ h3{
     display: flex;
     position: absolute;
     padding: 25px;
-    box-shadow: 2px -2px 0 1px #ffffff inset;
+    box-shadow: 2px -2px 0 1px rgb(17, 17, 17) inset;
     border: solid transparent;
     border-width: 0 0 2px 2px;
     transform: rotate(-45deg);
@@ -139,15 +137,9 @@ h3{
     justify-content: space-between;
     min-height: 80vh;
     max-width: 100%;
+    margin-top: 10vh;
 }
-.section2{
-    transition: opacity 1s;
-    opacity: -100;
-}
-.sectionVisible{
-    opacity: 5;
-    transition:  2s;
-}
+
 .CampoSelfie{
     display: flex;
     align-items: center;
@@ -198,10 +190,7 @@ h3{
 margin-bottom: 6%;
 
 }
-.section3{
-    transition: opacity 1s;
-    opacity: -100;
-}
+
 .titulo{
     font-family: 'Righteous', arial;
     display: flex;
@@ -210,58 +199,50 @@ margin-bottom: 6%;
     margin-top: 5%;
     justify-content: center;
     font-size: 50px;
-    color: rgb(26, 26, 26);
+    color: rgb(220, 220, 220);
     background: linear-gradient(248deg, #0299B8 0%, #9118F5 61%);
 }
 .CampoFAcad{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
     
 }
 .instituicao{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     height: 200px;
-    width: 200px;   
+    width: 90%;   
 }
 .ImgInstituicao{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     z-index: 1;
-    border-radius: 20px;
     height: 80%;
-    width: 100%; 
+    width: 80%; 
     transition: 1s;
     border: solid 5px rgba(0, 0, 0, 0);
 }
-.ImgInstituicao:hover{
-    cursor: pointer;
-    transition: 1s;
-    transform: scale(1.2);
-    box-shadow: rgb(255, 255, 255) 0px 2px 10px 1px;
-    
-}
-.pontinhos{
-    display: flex;   
-    margin-bottom: 2%;
-    width: 10%;
-    border-bottom: dotted 5px; 
-    
+.ImgInstituicao span{
+    margin-left: 1vh;
 }
 
 #ETEC{
-    background: url('./Img/Icon_Etec.jpeg') center;
-    background-size: 100%;
-    transform: scale(1.2);
-    box-shadow: rgb(255, 255, 255) 0px 2px 10px 1px;
+    background: linear-gradient(to left, rgba(26, 26, 26, 0) 0%, rgb(220, 220, 220) 50%), url('./Img/Icon_Etec.jpeg');
+    background-size: contain;
+    
 }
 #UNIP{
-    background: url('./Img/Icon_Unip.png') center;
-    background-size: 100%;
+    background: linear-gradient(to left, rgba(26, 26, 26, 0) 0%, rgb(220, 220, 220) 50%), url('./Img/Icon_Unip.png');
+    background-size: contain;
     
 }
 #FMU{
-    background: url('./Img/Icon_Fmu.png') center;
-    background-size: 100%;
+    background: linear-gradient(to left, rgba(26, 26, 26, 0) 0%, rgb(220, 220, 220) 50%), url('./Img/Icon_Fmu.png');
+    background-size: contain;
     
 }
 .DescFAcad{
@@ -276,26 +257,13 @@ margin-bottom: 6%;
     
 
 }
-.TextoInst{
-    margin-left: 16px;
-    margin-right: 5px;
-    color: #0299B8;
-    
-}
-#section4{
-    min-height: 80vh;
-    
-}
-.section4{
-    transition: opacity 1s;
-    opacity: -100;
-}
+
 .CampoExpProf{
     display: flex;
     justify-content: space-around;
     align-items: center;
     
-    height: 60vh;
+    
 }
 .ImgExpProf{
     
@@ -309,6 +277,7 @@ margin-bottom: 6%;
 }
 .TitleExpProf{
     color: #0299B8;
+    font-weight: bold;
     
 }
 
@@ -316,10 +285,7 @@ margin-bottom: 6%;
     min-height: 100vh;
     
 }
-.section5{
-    transition: opacity 1s;
-    opacity: -100;
-}
+
 
 #CampoConhecimento{
     display: flex;
@@ -335,6 +301,7 @@ margin-bottom: 6%;
     color: #9118F5;
     justify-content: center;
     margin-bottom: 10%;
+    font-weight: bold;
 }
 .BoxHabilidade{
     display: flex;
@@ -353,7 +320,7 @@ margin-bottom: 6%;
     height: 5px;
 }
 .BarraHabilidadeNegativa{
-    background-color: rgba(255, 255, 255, 0.279);
+    background-color: rgba(0, 0, 0, 0.197);
     margin-left: 10px;
     width: 40px;
     height: 5px;
@@ -371,7 +338,6 @@ margin-bottom: 6%;
         font-size: 23px;
     }
     #section2{
-        margin-top: 3%;
         flex-direction: column-reverse;
         
     }
@@ -383,9 +349,14 @@ margin-bottom: 6%;
     }
   
 }
-@media (max-width: 900px){
-    .titFrase{
-        font-size: 20px;
+
+@media (max-width: 1000px){
+    *{
+        font-size: 13px;
+    }
+    .titulo{
+        font-size: 25px;
+        
     }
     #CampoConhecimento{
         flex-direction: column;
@@ -394,19 +365,11 @@ margin-bottom: 6%;
     .NomeBox{
         margin-top: 100px;
     }
-}
-@media (max-width: 899px){
-    *{
-        font-size: 17px;
-    }
-    .titulo{
-        font-size: 35px;
-        
-    }
     #section1{
         flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
+        background: transparent;
 
     }
     #titulo{
@@ -417,16 +380,20 @@ margin-bottom: 6%;
     }
     #imagemTitulo{
         height: 40%;
+        background: linear-gradient(248deg, #0299B8 0%, #9118F5 61%);
+    color: transparent;
+    background-clip: text;
+    text-decoration:overline;
        
    
     }
     .opcoes{
         width: 100%;
         border-radius: 0%;
-        background:transparent;
+        background: linear-gradient(248deg, #0299B8 0%, #9118F5 100%);
         padding: 5px 0 5px 0;
        
-        box-shadow: black 0px 2px 100px 1px;
+        box-shadow: black 0px 2px 10px 1px;
     }
     .titFrase{
         display: flex;
@@ -443,10 +410,6 @@ margin-bottom: 6%;
     .Selfie{
         width: 200px;
         height: 200px;
-    }
-    .instituicao{
-        width: 90px;
-        height: 100px;
     }
     .ImgExpProf{
         display: none;

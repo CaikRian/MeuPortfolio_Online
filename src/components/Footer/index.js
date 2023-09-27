@@ -5,11 +5,7 @@ function Footer(){
         <footer>
             <span>Produzido por Caik</span>
             <span>Portfólio Online</span>
-            <ol>Contato:
-                
-                <ul>11 9 3707-0068</ul>
-                <ul>caik.job1707@gmail.com</ul>
-            </ol>
+            <span>caik.job1707@gmail.com</span>
         </footer>
     );
 }
