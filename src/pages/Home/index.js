@@ -5,6 +5,7 @@ import Icon_Linkedin from './Img/LI-In-Bug.png';
 import Icon_People from './Img/Icon_People.svg';
 
 
+
 function Home() {
         
     
@@ -43,10 +44,11 @@ function Home() {
                 }
     
                 
-               }}); */
-
+               }}); */             
+   
 
     return(
+        
 
         <main>
            <article id='section1'>
