@@ -259,6 +259,9 @@ margin-bottom: 6%;
 #TitInst{
     font-weight: bold;
 }
+#CursoInst{
+    font-weight: bold;
+}
 
 .CampoExpProf{
     display: flex;
