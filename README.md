@@ -37,6 +37,6 @@ Se você quiser entrar em contato comigo para discutir oportunidades de colabora
 
 ## Licença
 
-Este projeto é licenciado sob a Licença [inserir a licença que você escolher aqui] - consulte o arquivo [LICENSE](LICENSE) para obter mais detalhes.
+Este projeto é licenciado sob a Licença [MIT] - consulte o arquivo [LICENSE](LICENSE) para obter mais detalhes.
 
 Obrigado por visitar meu portfólio!
