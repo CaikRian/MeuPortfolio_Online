@@ -71,18 +71,22 @@ function Home() {
             </div>
             <div className='CampoSobre'>
                 <h1 id='TitSobreMim'>Sobre mim</h1>
-                <span>&nbsp;Meu primeiro contato com a tecnologia foi aos 12 anos, quando ganhei o meu primeiro celular. 
-                    Achava um máximo, a ideia de uma “pequena caixa” carregar tanto conteúdo. Desde então, sempre tive a curiosidade 
-                    de entender como é o sistema por trás daqueles aplicativos e sites que tanto acessamos.
+                <span>&nbsp;Meu nome é Caik Rian, tenho 20 anos e moro em Osasco-SP. 
+                    Desde cedo, meu fascínio pela tecnologia e sistemas de computação me impulsionou a buscar conhecimento na área.
+                      Iniciei minha jornada acadêmica na ETEC, onde me formei como Técnico em Análise e Desenvolvimento de Sistemas.
+                       Atualmente, estou trilhando um novo capítulo em minha vida acadêmica enquanto curso Ciência da Computação na FMU.
                     </span>
                     <br/>
-                <span>&nbsp;Nos meus 15 anos, consegui passar no vestibular para o curso técnico de desenvolvimento de sistemas integrado 
-                    ao ensino médio, da ETEC. Foi a partir deste curso, que eu realmente tive a primeira experiência na criação e 
-                    desenvolvimento de um sistema web.
+                <span>&nbsp;Minha paixão por resolver problemas e criar soluções me motiva a buscar constantemente desafios na área de tecnologia. 
+                    Além dos estudos, dedico meu tempo livre para projetos pessoais de programação e desenvolvimento de software, 
+                    buscando aprimorar minhas habilidades. Acredito que a combinação de conhecimento técnico e criatividade é a chave para enfrentar os desafios complexos que a computação oferece.
                     </span>
                     <br/>
-                <span>&nbsp;Sou técnico formado em Análise e Desenvolvimento de Sistemas, pela ETEC. Atualmente, 
-                    estou na minha graduação em Ciência da Computação, pela FMU - Faculdades Metropolitanas Unidas.
+                <span>&nbsp;Além da tecnologia, tenho diversos interesses, incluindo música e seriados, 
+                    que me ajudam a manter um equilíbrio entre a mente e o corpo. Estou comprometido em crescer profissionalmente, 
+                    compartilhar meu conhecimento e continuar explorando as infinitas possibilidades que o mundo da computação 
+                    tem a oferecer. Minha jornada está apenas começando, e estou ansioso para cada novo desafio e conquista que 
+                    o futuro me reserva.
                 </span>
             </div>
            </article>
@@ -123,7 +127,7 @@ function Home() {
             <article id='section4' className='section4'>
                 <div id='TitExpProf' className='titulo'>Experiência Profissional</div>
                 <div className='CampoExpProf'>
-                    <div className='ImgExpProf'><Link to='#'><img src={Icon_People}></img></Link></div>
+                    <div className='ImgExpProf'><img src={Icon_People}></img></div>
                     <div className='DescExpProf'>
                         <span className='TitleExpProf'>Empresa</span>
                         <span>&nbsp;ERP Solutions Ltda</span>
