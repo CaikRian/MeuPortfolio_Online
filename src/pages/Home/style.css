@@ -11,6 +11,7 @@
     scroll-behavior: smooth;
     scroll-margin-top: 16vh;
     
+    
 }
 
 main{ 
@@ -19,8 +20,8 @@ main{
     background-color: rgb(220, 220, 220);
     color: white;
     padding-bottom: 5%;
-    
 }
+
 h1{
     font-family: 'Righteous', arial;
     color: rgb(220, 220, 220);
@@ -50,6 +51,14 @@ h3{
     100%{background-position: 0% 50%;}
 
 }
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 #section1{
     display: flex;
     max-width: 100%;
@@ -57,6 +66,8 @@ h3{
     background: linear-gradient(248deg, #029ab8f8 0%, #9118F5 60%);
     background-size: 200% 200%;
     animation: Home 5s linear infinite;
+    animation: fadeIn 1s linear;
+    
 }
 #titulo{
     display: flex;
