@@ -8,10 +8,18 @@
 	}
     
 }
-
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 #PageTitulo{
     font-size: 30px;
     font-weight: bold;
+   
 }
 #PageProjetos{
     display: flex;
@@ -43,6 +51,7 @@
     margin: 10vh;
     padding: 1%;
     background-color: rgb(202, 202, 202);
+    animation: fadeIn 1s linear;
 }
 .IMGProjetos{
     
@@ -90,6 +99,9 @@
 }
 #MinhaPokedex{
     background-image: url('./img/Icon_pokemon.png');
+}
+#EmBreve{
+    pointer-events: none;
 }
 .DescrBoxProjeto{
     display: flex;

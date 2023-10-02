@@ -48,7 +48,7 @@ function Projetos(){
                 </div>
             </div>
             <div className='BoxProjeto' id='BoxProjetoDireito'>
-                    <div className='IMGProjetos' ><div className='loading'></div></div>
+                    <div className='IMGProjetos' id='EmBreve'><div className='loading'></div></div>
                     <div className='DescrBoxProjeto' id='DescrBoxProjetoDireito'>
                     <div className='NomeBoxProjeto' id='NomeBoxProjetoDireito'>Em Breve</div>
                     <div className='ResumoBoxProjeto'>Descrição</div>
