@@ -88,6 +88,9 @@
 #HelpEarth{
     background-image: url('./img/Icon_HelpeEarth.png');
 }
+#MinhaPokedex{
+    background-image: url('./img/Icon_pokemon.png');
+}
 .DescrBoxProjeto{
     display: flex;
     width: 100%;
