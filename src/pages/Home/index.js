@@ -130,7 +130,7 @@ function Home() {
                     <div className='ImgExpProf'><img src={Icon_People}></img></div>
                     <div className='DescExpProf'>
                         <span className='TitleExpProf'>Empresa</span>
-                        <span>&nbsp;ERP Solutions Ltda</span>
+                        <span>&nbsp;ERP Solutions Ltda.</span>
                         <br/>
                         <span className='TitleExpProf'>Cargo</span>
                         <span>&nbsp;Estágio em Análise e Desenvolvimento de Sistemas - 03/2023 até 07/2023</span>
@@ -229,7 +229,7 @@ function Home() {
                             <div className='NomeHabilidade'>SQL</div>
                             <div className='BarraHabilidade'></div>
                             <div className='BarraHabilidade'></div>
-                            <div className='BarraHabilidadeNegativa'></div>
+                            <div className='BarraHabilidade'></div>
                         </div>
                         <div className='BoxHabilidade'>
                             <div className='NomeHabilidade'>ADVPL</div>
@@ -277,16 +277,10 @@ function Home() {
                             <div className='BarraHabilidade'></div>
                         </div>
                         <div className='BoxHabilidade'>
-                            <div className='NomeHabilidade'>GitHub</div>
+                            <div className='NomeHabilidade'>Git</div>
                             <div className='BarraHabilidade'></div>
                             <div className='BarraHabilidade'></div>
                             <div className='BarraHabilidade'></div>
-                        </div>
-                        <div className='BoxHabilidade'>
-                            <div className='NomeHabilidade'>GitBash</div>
-                            <div className='BarraHabilidade'></div>
-                            <div className='BarraHabilidade'></div>
-                            <div className='BarraHabilidadeNegativa'></div>
                         </div>
                         <div className='BoxHabilidade'>
                             <div className='NomeHabilidade'>Protheus</div>

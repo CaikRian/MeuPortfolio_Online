@@ -1,5 +1,9 @@
 
 import './style.css';
+import logo_html from "./img/logo_html.png"
+import logo_css from "./img/logo_css.png"
+import logo_javascript from "./img/logo_javascript.png"
+import logo_react from "./img/logo_react.png"
 
 function Projetos(){
     const redirecionarParaURL = (op) => {
@@ -24,17 +28,25 @@ function Projetos(){
                     <div className='ResumoBoxProjeto'>Descrição</div>
                     <div className='TextoBoxProjeto'>OnlyFilms é um site fíctício para aluguel e vendas de filmes.</div>
                     <div className='ResumoBoxProjeto'>Ferramentas</div>
-                    <div className='TextoBoxProjeto'>HTML, CSS.</div>
+                    <div className='TextoBoxProjeto'>
+                        <img className='ImgFerramentas' src={logo_html}></img>
+                        <img className='ImgFerramentas' src={logo_css}></img>
+                    </div>
+                    
                 </div>
             </div>
-            <div className='BoxProjeto' id='BoxProjetoDireito'>
+            <div className='BoxProjeto'>
                     <div className='IMGProjetos' id='HelpEarth' onClick={() => redirecionarParaURL(2)}></div>
-                    <div className='DescrBoxProjeto' id='DescrBoxProjetoDireito'>
-                    <div className='NomeBoxProjeto' id='NomeBoxProjetoDireito'>Help Earth</div>
+                    <div className='DescrBoxProjeto'>
+                    <div className='NomeBoxProjeto'>Help Earth</div>
                     <div className='ResumoBoxProjeto'>Descrição</div>
-                    <div className='TextoBoxProjeto'><p>Help Earth é um site fictício de notícias focadas no meio-ambiente.</p></div>
+                    <div className='TextoBoxProjeto'>Help Earth é um site fictício de notícias focadas no meio-ambiente.</div>
                     <div className='ResumoBoxProjeto'>Ferramentas</div>
-                    <div className='TextoBoxProjeto'>HTML, CSS e JavaScript.</div>
+                    <div className='TextoBoxProjeto'>
+                        <img className='ImgFerramentas' src={logo_html}></img>
+                        <img className='ImgFerramentas' src={logo_css}></img>
+                        <img className='ImgFerramentas' src={logo_javascript}></img>
+                    </div>
                 </div>
             </div>
             <div className='BoxProjeto'>
@@ -42,15 +54,20 @@ function Projetos(){
                 <div className='DescrBoxProjeto'>
                     <div className='NomeBoxProjeto' id='TextoLoading'>Minha Pokédex</div>
                     <div className='ResumoBoxProjeto'>Descrição</div>
-                    <div className='TextoBoxProjeto'>Um Website que, através de um API, puxa as informações de alguns pokemons.</div>
+                    <div className='TextoBoxProjeto'>Um Website que, através de um API, puxa as informações de todos os pokemons que existem no universo de Pokemon.</div>
                     <div className='ResumoBoxProjeto'>Ferramentas</div>
-                    <div className='TextoBoxProjeto'>HTML, CSS, ReactJS e API.</div>
+                    <div className='TextoBoxProjeto'>
+                        <img className='ImgFerramentas' src={logo_html}></img>
+                        <img className='ImgFerramentas' src={logo_css}></img>
+                        <img className='ImgFerramentas' src={logo_javascript}></img>
+                        <img className='ImgFerramentas' src={logo_react}></img>
+                    </div>
                 </div>
             </div>
-            <div className='BoxProjeto' id='BoxProjetoDireito'>
+            <div className='BoxProjeto'>
                     <div className='IMGProjetos' id='EmBreve'><div className='loading'></div></div>
-                    <div className='DescrBoxProjeto' id='DescrBoxProjetoDireito'>
-                    <div className='NomeBoxProjeto' id='NomeBoxProjetoDireito'>Em Breve</div>
+                    <div className='DescrBoxProjeto'>
+                    <div className='NomeBoxProjeto'>Em Breve</div>
                     <div className='ResumoBoxProjeto'>Descrição</div>
                     <div className='TextoBoxProjeto'>___________</div>
                     <div className='ResumoBoxProjeto'>Ferramentas</div>

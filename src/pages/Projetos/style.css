@@ -30,52 +30,48 @@
 }
 .ConteinerProjetos{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     justify-content:space-evenly;
-    width: 60%;
+    width: 100%;
     min-height: 75vh;
     transition: 2s;
-    
-    
 }
 .BoxProjeto{
     display: flex;
+    flex-direction: column;
     align-items: center;
-    width: 100%;
-    min-height: 40vh;
+    width: 300px;
+    height: 500px;
     background-size: 100%;
     background-position: top;
     transition: 1s;
     background-size: cover;
-    margin: 10vh;
+    margin: 10vh 5vh 10vh 5vh;
     padding: 1%;
     background-color: rgb(202, 202, 202);
     animation: fadeIn 1s linear;
 }
 .IMGProjetos{
     
-    width: 40vh;
-    height: 30vh;
+    width: 100%;
+    height: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-position: center;
     background-size: cover;
-    box-shadow: 0px 0px 10px 1px black;
+    box-shadow: 0px 0px 10px 1px rgb(202, 202, 202);
+ 
     transition: 0.3s;
    
 }
 .IMGProjetos:Hover{
-    box-shadow: -30px 15px 0px 10px #9118F5;
+    box-shadow: -30px -18px 0px 10px #9118F5;
     transform: scale(1.1);
     cursor: pointer;
     
 }
-#HelpEarth:hover{
-    box-shadow: 30px 15px 0px 10px #9118F5;
-}
-
 
 
 
@@ -117,13 +113,10 @@
     margin: 3% 8% 3% 8%;
     border: solid 5px transparent;
     border-left-color: #9118F5;
+    width: 100%;
 }
 #TextoLoading{
     width: 100%;
-}
-#NomeBoxProjetoDireito{
-    border-left-color: transparent;
-    border-right-color: #9118F5;
 }
 .ResumoBoxProjeto{
     font-weight: bold;
@@ -131,65 +124,10 @@
 }
 .TextoBoxProjeto{
     margin-left: 2%;
+    font-size: 15px;
 }
-#DescrBoxProjetoDireito{
-align-items: flex-end;
+.ImgFerramentas{
+    width: 35px;
 }
 
-@media (max-width: 1000px){
 
-    .BoxProjeto{
-        flex-direction: column;
-    }
-    #BoxProjetoDireito{
-        flex-direction: column;
-    }
-    #DescrBoxProjetoDireito{
-        align-items: flex-start;
-    }
-    #NomeBoxProjetoDireito{
-        border-right-color: transparent;
-        border-left-color: #9118F5;
-    }
-    .IMGProjetos:Hover{
-        box-shadow: none;
-        transform: scale(1);
-        cursor: pointer;
-        
-    }
-    #HelpEarth:hover{
-        box-shadow: none;
-    }
-
-}
-@media (max-width: 780px){
-    #Tela1Projetos{
-        flex-direction: column;
-    }
-    .Projeto{
-        width: 100%;
-        margin-bottom: 10vh;
-
-    }
-    .SpanProjetos{
-        margin: 5vh;
-    }
-    .BoxProjeto{
-        margin: 10vh;
-        width: 40vh;
-        
-    }
-    #NomeProjeto{
-        border-radius: 0%;
-    } 
-    #Tela2Projetos{
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-       
-    }
-    #ImgProjeto{
-        border-radius: 100%;
-    }
-
-}
