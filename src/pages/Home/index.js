@@ -1,5 +1,6 @@
 import './style.css'
 import {Link} from 'react-router-dom';
+import React, { useEffect } from 'react';
 import Icon_GitHub from './Img/github-mark.png';
 import Icon_Linkedin from './Img/LI-In-Bug.png';
 import Icon_People from './Img/Icon_People.svg';
@@ -9,43 +10,22 @@ import Icon_People from './Img/Icon_People.svg';
 function Home() {
         
     
-  /*          window.addEventListener("scroll", function() {
-
-                const Section2 = document.getElementById('section2');
-                const Section3 = document.getElementById('section3');
-                const Section4 = document.getElementById('section4');
-                const Section5 = document.getElementById('section5');
-                var scrollPosition = window.scrollY;    
+    useEffect(() => {
+        // Verificar se há um ID na URL
+        if (window.location.hash) {
+          // Extrair o ID da URL, removendo o caractere "#" inicial
+          const id = window.location.hash.substring(1);
     
-                if(Section2 || Section3 || Section4 || Section5){
-
-                if (scrollPosition > 100 && scrollPosition < 1200) {
-                    Section2.style.opacity = '5';
-                } else {
-                    Section2.style.opacity = '-10';
-                }
-                
-                if (scrollPosition > 1000 && scrollPosition < 1600) {
-                    Section3.style.opacity = '5';
-                } else {
-                    Section3.style.opacity = '-10';
-                }
+          // Encontrar o elemento com o ID correspondente
+          const elemento = document.getElementById(id);
     
-                if (scrollPosition > 1400 && scrollPosition < 2000) {
-                    Section4.style.opacity = '5';
-                } else {
-                    Section4.style.opacity = '-10';
-                }
+          if (elemento) {
+            // Rolar suavemente até o elemento
+            elemento.scrollIntoView();
+          }
+        }
+      }, []); // O array vazio [] garante que o efeito só será executado uma vez, no momento do montagem do componente.
     
-                if (scrollPosition > 1900) {
-                    Section5.style.opacity = '5';
-                } else {
-                    Section5.style.opacity = '-10';
-                }
-    
-                
-               }}); */             
-   
 
     return(
         
@@ -66,8 +46,10 @@ function Home() {
            </article> 
            <article id='section2' className='section2'>
             <div className='CampoSelfie'>
-                <div className='Selfie'></div>
-                <div className='BordaSelfie'></div>
+                <div className='Selfie'>
+                    <div className='BordaSelfie'></div>
+                </div>
+                
             </div>
             <div className='CampoSobre'>
                 <h1 id='TitSobreMim'>Sobre mim</h1>

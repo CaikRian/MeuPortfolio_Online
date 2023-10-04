@@ -55,17 +55,18 @@ function Header(){
         <header>
             
             
-            <Link to="/" class="logo" onClick={FecharMenu}>CK</Link>
+           
+            <a href="/" class="logo" onClick={FecharMenu}>CK</a>
             <div className = "menu" id='menuPC' >
                 <a href='/#'>Home</a>
                 <a href='/#TitSobreMim'>Sobre mim</a>
                 <a href='/#TitFormAcad'>Formação Acadêmica</a>
                 <a href='/#TitExpProf'>Exp. Profissional</a>
                 <a href='/#TitHabild'>Habilidades</a>
-                <div className='BtnProjetos'><Link to="/Projetos" id='LinkProjeto'>Projetos</Link></div>
+                <div className='BtnProjetos'><a href="/Projetos/#" id='LinkProjeto'>Projetos</a></div>
             </div>
             <div className = "menu" id='menuResponsivo'>
-            <div className='BtnProjetos' onClick={FecharMenu}><Link to="/Projetos">Projetos</Link></div>
+            <div className='BtnProjetos' onClick={FecharMenu}><a href="/Projetos/#">Projetos</a></div>
                 <div className='BarraMenu' onClick={AbrirMenu}>
                     <div className='Barrinhas' id='Barrinha1'></div>
                     <div className='Barrinhas' id='Barrinha2'></div>
