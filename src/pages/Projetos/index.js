@@ -1,11 +1,29 @@
 
 import './style.css';
+import React, { useEffect } from 'react';
 import logo_html from "./img/logo_html.png"
 import logo_css from "./img/logo_css.png"
 import logo_javascript from "./img/logo_javascript.png"
 import logo_react from "./img/logo_react.png"
 
 function Projetos(){
+    useEffect(() => {
+        // Verificar se há um ID na URL
+        if (window.location.hash) {
+          // Extrair o ID da URL, removendo o caractere "#" inicial
+          const id = window.location.hash.substring(1);
+    
+          // Encontrar o elemento com o ID correspondente
+          const elemento = document.getElementById(id);
+    
+          if (elemento) {
+            // Rolar suavemente até o elemento
+            elemento.scrollIntoView();
+          }
+        }
+      }, []); // O array vazio [] garante que o efeito só será executado uma vez, no momento do montagem do componente.
+    
+
     const redirecionarParaURL = (op) => {
         if(op === 1){
             window.location.href = '';
