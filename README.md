@@ -18,7 +18,7 @@ Este site foi construído utilizando as seguintes tecnologias:
 - HTML
 - CSS
 - JavaScript
-- React
+- React.JS
 
 ## Visualização Online
 

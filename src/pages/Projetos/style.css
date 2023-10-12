@@ -96,6 +96,9 @@
 #MinhaPokedex{
     background-image: url('./img/Icon_pokemon.png');
 }
+#RetroGlam{
+    background-image: url('./img/logo_RetroGlam.png');
+}
 #EmBreve{
     pointer-events: none;
 }

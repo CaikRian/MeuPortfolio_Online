@@ -34,7 +34,7 @@ function Home() {
            <article id='section1'>
             <div id='titulo'>
            <span className='titFrase'>Oi, tudo bem? Meu nome é Caik.</span>
-           <span className='titFrase'>Seja bem-vindo(a) ao meu portfólio online.</span>
+           <span className='titFrase' id='EfeitoDigito'>Seja bem-vindo(a) ao meu portfólio online.</span>
            
            <div className='opcoes'>
             <Link to='https://github.com/CaikRian'><img src={Icon_GitHub}></img></Link>
