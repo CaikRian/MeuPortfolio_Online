@@ -31,6 +31,8 @@ function Projetos(){
             window.location.href = 'https://site-help-earth.vercel.app/';
         }else if(op === 3){
             window.location.href = 'https://minha-pokedex.vercel.app/';
+        }else if(op === 4){
+            window.location.href = 'https://retro-glam-couture.vercel.app/';
         }
         
       };
@@ -72,7 +74,25 @@ function Projetos(){
                 <div className='DescrBoxProjeto'>
                     <div className='NomeBoxProjeto' id='TextoLoading'>Minha Pokédex</div>
                     <div className='ResumoBoxProjeto'>Descrição</div>
-                    <div className='TextoBoxProjeto'>Um Website que, através de um API, puxa as informações de todos os pokemons que existem no universo de Pokemon.</div>
+                    <div className='TextoBoxProjeto'>Um Website que, através de um API, puxa as informações de todos 
+                        os pokemons que existem no universo de Pokemon.</div>
+                    <div className='ResumoBoxProjeto'>Ferramentas</div>
+                    <div className='TextoBoxProjeto'>
+                        <img className='ImgFerramentas' src={logo_html}></img>
+                        <img className='ImgFerramentas' src={logo_css}></img>
+                        <img className='ImgFerramentas' src={logo_javascript}></img>
+                        <img className='ImgFerramentas' src={logo_react}></img>
+                    </div>
+                </div>
+            </div>
+            <div className='BoxProjeto'>
+                    <div className='IMGProjetos' id='RetroGlam' onClick={() => redirecionarParaURL(4)}></div>
+                <div className='DescrBoxProjeto'>
+                    <div className='NomeBoxProjeto' id='TextoLoading'>RetroGlam C.</div>
+                    <div className='ResumoBoxProjeto'>Descrição</div>
+                    <div className='TextoBoxProjeto'>A RetroGlam Couture é uma marca de moda que combina a elegância intemporal de 
+                        décadas passadas com elementos contemporâneos. Seu website funciona como uma plataforma de comércio eletrônico, 
+                        onde os clientes podem adquirir peças de moda retrô. </div>
                     <div className='ResumoBoxProjeto'>Ferramentas</div>
                     <div className='TextoBoxProjeto'>
                         <img className='ImgFerramentas' src={logo_html}></img>

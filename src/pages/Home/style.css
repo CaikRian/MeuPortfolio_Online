@@ -59,15 +59,23 @@ h3{
         opacity: 1;
     }
 }
-@keyframes borderSnake {
-    0% {
-        
-     
+@keyframes typing {
+    from {
+        width: 0;
     }
-    100% {
-        
+    to {
+        width: 600px;
     }
 }
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #000;
+    }
+}
+
 #section1{
     display: flex;
     max-width: 100%;
@@ -82,19 +90,25 @@ h3{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
     width: 70%;
     background: linear-gradient(90deg, rgb(220, 220, 220) 70%, #9218f500 100%);
 }
 .titFrase{
-    display: flex;
-    justify-content: center;
+    border-right: 2px solid transparent;
     font-size: 30px;
-    
-    margin-right: 40vh;
+    margin-left: 2%;
     font-family: 'Righteous', arial;
     
+    white-space: nowrap;
+    overflow: hidden;
    
 }
+#EfeitoDigito{
+    animation: blink-caret 0.75s step-end infinite;
+    
+}
+
 
 .subtit{
     margin-left: 5%;
@@ -169,16 +183,15 @@ h3{
 }
 .Selfie{
     background-image: url('./Img/Img_Selfie.jpg');
-    border: solid 10px #0299B8;
-    box-shadow: 0px 0px 20px 0px #0299B8;
-    border-bottom-color: #9118F5;
-    border-top-color: #9118F5;
+    
+    box-shadow: 0px 0px 10px 0px black;
+   border-radius: 100%;
     width: 250px;
     height: 250px;
     background-size: cover;
     background-repeat: no-repeat;
-    border-radius: 100%;
-    animation: borderSnake 2s linear infinite;
+    
+   
     position: relative;
    
 }
