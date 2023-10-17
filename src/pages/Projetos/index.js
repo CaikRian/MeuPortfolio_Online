@@ -41,7 +41,7 @@ function Projetos(){
        <main id='PageProjetos'>
         <div id='PageTitulo'>Meus Projetos</div>
         <div className='ConteinerProjetos' id='Tela1Projetos'>
-            <div className='BoxProjeto'>
+              {/* <div className='BoxProjeto'>
                     <div className='IMGProjetos' id='OnlyFilms' onClick={() => redirecionarParaURL(1)}></div>
                 <div className='DescrBoxProjeto'>
                     <div className='NomeBoxProjeto'>OnlyFilms</div>
@@ -54,7 +54,9 @@ function Projetos(){
                     </div>
                     
                 </div>
-            </div>
+            </div>  */} 
+            {/* Atualização de projeto */}
+            
             <div className='BoxProjeto'>
                     <div className='IMGProjetos' id='HelpEarth' onClick={() => redirecionarParaURL(2)}></div>
                     <div className='DescrBoxProjeto'>
