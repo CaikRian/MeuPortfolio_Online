@@ -5,6 +5,8 @@ import logo_html from "./img/logo_html.png"
 import logo_css from "./img/logo_css.png"
 import logo_javascript from "./img/logo_javascript.png"
 import logo_react from "./img/logo_react.png"
+import ProjetoDestaque from "./video/RetroGlam.mp4"
+import logo_RetroGlam from "./img/logo_RetroGlam.png"
 
 function Projetos(){
     useEffect(() => {
@@ -39,7 +41,18 @@ function Projetos(){
 
     return(
        <main id='PageProjetos'>
-        <div id='PageTitulo'>Meus Projetos</div>
+        <div className='TituloSection'>Meu Projetos</div>
+        <div className='SubTituloSection'>Em Destaque:</div>
+        <div id='ProjetoDestaque' onClick={() => redirecionarParaURL(4)}>
+            <div id='DescrProjDest'>
+                <img src={logo_RetroGlam}/>
+                <p className='titProjDest'>RetroGlam Culture</p>
+                <p className='sobreProjDest'>A RetroGlam Couture é uma marca de moda que combina a elegância intemporal de 
+                        décadas passadas com elementos contemporâneos.</p>
+            </div>
+            <video src={ProjetoDestaque} autoPlay loop muted />
+        </div>
+        
         <div className='ConteinerProjetos' id='Tela1Projetos'>
               {/* <div className='BoxProjeto'>
                     <div className='IMGProjetos' id='OnlyFilms' onClick={() => redirecionarParaURL(1)}></div>
@@ -92,8 +105,7 @@ function Projetos(){
                 <div className='DescrBoxProjeto'>
                     <div className='NomeBoxProjeto' id='TextoLoading'>RetroGlam C.</div>
                     <div className='ResumoBoxProjeto'>Descrição</div>
-                    <div className='TextoBoxProjeto'>A RetroGlam Couture é uma marca de moda que combina a elegância intemporal de 
-                        décadas passadas com elementos contemporâneos. Seu website funciona como uma plataforma de comércio eletrônico, 
+                    <div className='TextoBoxProjeto'> Seu website funciona como uma plataforma de comércio eletrônico, 
                         onde os clientes podem adquirir peças de moda retrô. </div>
                     <div className='ResumoBoxProjeto'>Ferramentas</div>
                     <div className='TextoBoxProjeto'>
