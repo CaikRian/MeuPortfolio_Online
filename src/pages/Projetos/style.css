@@ -57,7 +57,9 @@
     font-size: 40px;
 }
 .sobreProjDest{
-    margin: 10px;
+    background-color: black;
+    color: white;
+    padding: 10px;
 }
 #PageProjetos{
     display: flex;
@@ -176,9 +178,7 @@
         flex-direction: column;
         
     }
-    #DescrProjDest p{
-        margin: 25px;
-    }
+    
     #ProjetoDestaque img{
         width: 50%;
     }
