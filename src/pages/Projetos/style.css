@@ -21,24 +21,23 @@
     font-size: 50px;
     font-weight: bold;
     margin-bottom: 70px;
-    
-   
+}
+#TituloSection{
+    width: 100%;
 }
 .SubTituloSection{
     width: 90%;
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 7px;
-    
-   
 }
 #ProjetoDestaque{
     display: flex;
-    width: 90%;
+    width: 100%;
     background-color: white;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.64);
-    cursor: pointer;
 }
+
 #ProjetoDestaque video{
     width: 60%;
 }
@@ -46,15 +45,29 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-   justify-content: space-evenly;
-   
+    justify-content: space-evenly;
 }
-
+.linkProjDest{
+    font-weight: bold;
+    border: solid 1px transparent;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: red;
+    color: white;
+}
+.linkProjDest:hover{
+    transform: scale(1.2);
+    color: white;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.64);
+}
 #DescrProjDest img{
     width: 300px;
 }
 .titProjDest{
     font-size: 40px;
+    font-weight: bold;
 }
 .sobreProjDest{
     background-color: black;
@@ -95,7 +108,7 @@
 .IMGProjetos{
     
     width: 100%;
-    height: 250px;
+    min-height: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -109,8 +122,6 @@
     box-shadow: -30px -18px 0px 10px #9118F5;
     transform: scale(1.1);
     cursor: pointer;
-    
-    
 }
 
 
@@ -127,9 +138,6 @@
 #OnlyFilms{
     background-image: url('./img/Icon_OnlyFilms.png');
 }
-#BoxProjetoDireito{
-    flex-direction: row-reverse;
-}
 #HelpEarth{
     background-image: url('./img/Icon_HelpeEarth.png');
 }
@@ -144,9 +152,11 @@
 }
 .DescrBoxProjeto{
     display: flex;
-    width: 100%;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
     margin-left: 4%;
     margin-right: 4%;
 }
@@ -176,7 +186,12 @@
 
     #ProjetoDestaque{
         flex-direction: column;
-        
+    }
+    #ProjetoDestaque p{
+        margin: 5% 0 5% 0;
+    }
+    .titProjDest{
+        font-size: 20px;
     }
     
     #ProjetoDestaque img{
@@ -187,7 +202,6 @@
     }
     #ProjetoDestaque video{
         width: auto;
-        
     }
     
 }

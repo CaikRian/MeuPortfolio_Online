@@ -5,8 +5,10 @@ import logo_html from "./img/logo_html.png"
 import logo_css from "./img/logo_css.png"
 import logo_javascript from "./img/logo_javascript.png"
 import logo_react from "./img/logo_react.png"
+import logo_api from "./img/logo_api.png"
 import ProjetoDestaque from "./video/RetroGlam.mp4"
 import logo_RetroGlam from "./img/logo_RetroGlam.png"
+
 
 function Projetos(){
     useEffect(() => {
@@ -43,12 +45,13 @@ function Projetos(){
        <main id='PageProjetos'>
         <div className='TituloSection'>Meu Projetos</div>
         <div className='SubTituloSection'>Em Destaque:</div>
-        <div id='ProjetoDestaque' onClick={() => redirecionarParaURL(4)}>
+        <div id='ProjetoDestaque'>
             <div id='DescrProjDest'>
                 <img src={logo_RetroGlam}/>
                 <p className='titProjDest'>RetroGlam Culture</p>
                 <p className='sobreProjDest'>A RetroGlam Couture é uma marca de moda que combina a elegância intemporal de 
                         décadas passadas com elementos contemporâneos.</p>
+                <p className='linkProjDest' onClick={() => redirecionarParaURL(4)}>Clique aqui para visitar</p>
             </div>
             <video src={ProjetoDestaque} autoPlay loop muted />
         </div>
@@ -97,6 +100,8 @@ function Projetos(){
                         <img className='ImgFerramentas' src={logo_css}></img>
                         <img className='ImgFerramentas' src={logo_javascript}></img>
                         <img className='ImgFerramentas' src={logo_react}></img>
+                        <img className='ImgFerramentas' src={logo_api}></img>
+                        
                     </div>
                 </div>
             </div>
