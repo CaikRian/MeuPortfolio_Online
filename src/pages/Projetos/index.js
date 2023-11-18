@@ -10,6 +10,7 @@ import ProjetoDestaque from "./video/RetroGlam.mp4"
 import logo_RetroGlam from "./img/logo_RetroGlam.png"
 
 
+
 function Projetos(){
     useEffect(() => {
         // Verificar se há um ID na URL
@@ -37,6 +38,8 @@ function Projetos(){
             window.location.href = 'https://minha-pokedex.vercel.app/';
         }else if(op === 4){
             window.location.href = 'https://retro-glam-couture.vercel.app/';
+        }else if(op === 5){
+            window.location.href = 'https://sorriso-prime-dental.vercel.app/';
         }
         
       };
@@ -112,6 +115,22 @@ function Projetos(){
                     <div className='ResumoBoxProjeto'>Descrição</div>
                     <div className='TextoBoxProjeto'> Seu website funciona como uma plataforma de comércio eletrônico, 
                         onde os clientes podem adquirir peças de moda retrô. </div>
+                    <div className='ResumoBoxProjeto'>Ferramentas</div>
+                    <div className='TextoBoxProjeto'>
+                        <img className='ImgFerramentas' src={logo_html}></img>
+                        <img className='ImgFerramentas' src={logo_css}></img>
+                        <img className='ImgFerramentas' src={logo_javascript}></img>
+                        <img className='ImgFerramentas' src={logo_react}></img>
+                    </div>
+                </div>
+            </div>
+            <div className='BoxProjeto'>
+                    <div className='IMGProjetos' id='SorrisoPrime' onClick={() => redirecionarParaURL(5)}></div>
+                    <div className='DescrBoxProjeto'>
+                    <div className='NomeBoxProjeto'>SorrisoPrime D.</div>
+                    <div className='ResumoBoxProjeto'>Descrição</div>
+                    <div className='TextoBoxProjeto'>É uma plataforma inovadora que une 
+                    tecnologia e cuidados personalizados para oferecer uma experiência odontológica excepcional.</div>
                     <div className='ResumoBoxProjeto'>Ferramentas</div>
                     <div className='TextoBoxProjeto'>
                         <img className='ImgFerramentas' src={logo_html}></img>
