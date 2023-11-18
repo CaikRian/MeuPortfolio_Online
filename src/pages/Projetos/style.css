@@ -95,7 +95,7 @@
     flex-direction: column;
     align-items: center;
     width: 300px;
-    height: 500px;
+    min-height: 500px;
     background-size: 100%;
     background-position: top;
     transition: 1s;
@@ -146,6 +146,9 @@
 }
 #RetroGlam{
     background-image: url('./img/logo_RetroGlam.png');
+}
+#SorrisoPrime{
+    background-image: url('./img/logo_SorrisoPrime_Dental.png');
 }
 #EmBreve{
     pointer-events: none;
