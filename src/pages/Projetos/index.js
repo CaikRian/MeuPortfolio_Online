@@ -6,8 +6,10 @@ import logo_css from "./img/logo_css.png"
 import logo_javascript from "./img/logo_javascript.png"
 import logo_react from "./img/logo_react.png"
 import logo_api from "./img/logo_api.png"
+import logo_bootstrap from "./img/logo_bootstrap.png"
 import ProjetoDestaque from "./video/RetroGlam.mp4"
 import logo_RetroGlam from "./img/logo_RetroGlam.png"
+import logo_Hospital_flor_da_vida from "./img/logo_Hospital-flor-da-vida.jpeg"
 
 
 
@@ -40,6 +42,8 @@ function Projetos(){
             window.location.href = 'https://retro-glam-couture.vercel.app/';
         }else if(op === 5){
             window.location.href = 'https://sorriso-prime-dental.vercel.app/';
+        }else if(op === 6){
+            window.location.href = 'https://hospital-flor-da-vida.vercel.app/';
         }
         
       };
@@ -137,6 +141,21 @@ function Projetos(){
                         <img className='ImgFerramentas' src={logo_css}></img>
                         <img className='ImgFerramentas' src={logo_javascript}></img>
                         <img className='ImgFerramentas' src={logo_react}></img>
+                    </div>
+                </div>
+            </div>
+            <div className='BoxProjeto'>
+                    <div className='IMGProjetos' id='Hospital_flor_da_vida' onClick={() => redirecionarParaURL(6)}></div>
+                    <div className='DescrBoxProjeto'>
+                    <div className='NomeBoxProjeto'>Hosp. Flor da Vida</div>
+                    <div className='ResumoBoxProjeto'>Descrição</div>
+                    <div className='TextoBoxProjeto'>Site fictício para cadastro e gerenciamento de pacientes em um hospital, oferecendo uma interface intuitiva para médicos registrarem e administrarem informações, agendamentos, exames e diagnósticos.</div>
+                    <div className='ResumoBoxProjeto'>Ferramentas</div>
+                    <div className='TextoBoxProjeto'>
+                        <img className='ImgFerramentas' src={logo_html}></img>
+                        <img className='ImgFerramentas' src={logo_css}></img>
+                        <img className='ImgFerramentas' src={logo_javascript}></img>
+                        <img className='ImgFerramentas' src={logo_bootstrap}></img>
                     </div>
                 </div>
             </div>
