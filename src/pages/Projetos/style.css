@@ -150,6 +150,9 @@
 #SorrisoPrime{
     background-image: url('./img/logo_SorrisoPrime_Dental.png');
 }
+#Hospital_flor_da_vida{
+    background-image: url('./img/logo_Hospital-flor-da-vida.jpeg');
+}
 #EmBreve{
     pointer-events: none;
 }
@@ -164,7 +167,7 @@
     margin-right: 4%;
 }
 .NomeBoxProjeto{
-    font-size: 35px;
+    font-size: 30px;
     display: flex;
     margin: 3% 8% 3% 8%;
     border: solid 5px transparent;
