@@ -10,6 +10,7 @@ import logo_bootstrap from "./img/logo_bootstrap.png"
 import ProjetoDestaque from "./video/RetroGlam.mp4"
 import logo_RetroGlam from "./img/logo_RetroGlam.png"
 import logo_Hospital_flor_da_vida from "./img/logo_Hospital-flor-da-vida.jpeg"
+import logo_php from "./img/logo_php.png"
 
 
 
@@ -43,7 +44,7 @@ function Projetos(){
         }else if(op === 5){
             window.location.href = 'https://sorriso-prime-dental.vercel.app/';
         }else if(op === 6){
-            window.location.href = 'https://hospital-flor-da-vida.vercel.app/';
+            window.location.href = 'https://github.com/CaikRian/Hospital-Flor-da-Vida';
         }
         
       };
@@ -155,6 +156,7 @@ function Projetos(){
                         <img className='ImgFerramentas' src={logo_html}></img>
                         <img className='ImgFerramentas' src={logo_css}></img>
                         <img className='ImgFerramentas' src={logo_javascript}></img>
+                        <img className='ImgFerramentas' src={logo_php}></img>
                         <img className='ImgFerramentas' src={logo_bootstrap}></img>
                     </div>
                 </div>

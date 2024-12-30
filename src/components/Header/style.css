@@ -3,7 +3,7 @@ header{
     display: flex;
     position: fixed;
     z-index: 2;
-    background-color: rgb(220, 220, 220) ;
+    background-color: white ;
     height: 10vh;
     width: 100%;
     align-items: center;

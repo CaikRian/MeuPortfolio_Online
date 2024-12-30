@@ -3,16 +3,26 @@ import './style.css'
 function Footer(){
     return(
         <footer>
-            <div className='PrimeiraLinha'>
-            <span>Desenvolvido pelo Caik</span>
-            <span>Portfólio Online</span>
+        <div class='PrimeiraLinha'>
+            <span>Desenvolvido por <strong>Caik</strong></span>
             <span>caik.job1707@gmail.com</span>
-            </div>
-            
-            <div className='SegundaLinha'>
-                <span>Esse site foi criado com base no React</span>
-            </div>
+            <span>Portfólio Online</span>
+        </div>
+
+        <div class='Links'>
+            <a href="#home">Home</a>
+            <a href="#sobre-mim">Sobre Mim</a>
+            <a href="#experiencia-profissional">Experiência Profissional</a>
+            <a href="#experiencia-academica">Experiência Acadêmica</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#projetos">Projetos</a>
+        </div>
+
+        <div class='SegundaLinha'>
+            <span>Esse site foi criado com <strong>React</strong></span>
+        </div>
         </footer>
+
     );
 }
 export default Footer;

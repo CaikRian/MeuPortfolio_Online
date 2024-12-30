@@ -1,48 +1,111 @@
-
-Footer{
-   display: flex;
-   flex-direction: column;
-    
-    min-height: 10vh;
-    box-shadow: 0px 0px 10px 2px black;
-    background-color: rgb(220, 220, 220);
-    align-items: center;
-    justify-content: space-around;
-    padding-top: 1%;
-    
-    
-}
-Footer *{
-    font-size: 15px;
-}
-.PrimeiraLinha{
+footer {
     display: flex;
-    width: 100%;
-    justify-content: space-around;
+    color: white !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2%;
+    background-color: white;
+    background: linear-gradient(248deg, #0299B8 0%, #9118F5 61%);
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+    min-height: 15vh;
+    
 }
 
-@media (max-width: 500px){
-    Footer{
+footer .PrimeiraLinha {
+    display: flex;
+    color: white;
+    justify-content: center;
+    gap: 20px;
+    font-size: 14px;
+    flex-wrap: wrap;
+    text-align: center;
 
-        
-        align-items: stretch;
-        
+}
 
-    }
-    Footer *{
-        font-size: 15px;
-        
-    }
-    Footer span{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 1%;
-    }
-    .PrimeiraLinha{
-        flex-direction: column;
-    }
- 
+footer .PrimeiraLinha span {
+    display: inline-block;
+    padding: 5px 10px;
     
+    color: white;
+}
 
+footer .Links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 10px 0;
+    color: white;
+}
+
+footer .Links a {
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+footer .Links a:hover {
+    background-color: #000000;
+    color: white;
+}
+
+footer .SegundaLinha {
+    font-size: 12px;
+    margin-top: 10px;
+    text-align: center; 
+}
+footer .SegundaLinha span, strong{
+    color: white;
+}
+
+@media (max-width: 768px) {
+    footer {
+        padding: 1.5rem 5%;
+    }
+
+    footer .PrimeiraLinha {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    footer .Links {
+        gap: 10px;
+    }
+
+    footer .Links a {
+        font-size: 13px;
+    }
+
+    footer .SegundaLinha {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 500px) {
+    footer {
+        align-items: stretch;
+    }
+
+    footer .PrimeiraLinha {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    footer .Links {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    footer .Links a {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    footer .SegundaLinha {
+        font-size: 10px;
+    }
 }

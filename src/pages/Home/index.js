@@ -53,10 +53,10 @@ function Home() {
             </div>
             <div className='CampoSobre'>
                 <h1 id='TitSobreMim'>Sobre mim</h1>
-                <span>&nbsp;Meu nome é Caik Rian, tenho 20 anos e moro em Osasco-SP. 
-                    Desde cedo, meu fascínio pela tecnologia e sistemas de computação me impulsionou a buscar conhecimento na área.
-                      Iniciei minha jornada acadêmica na ETEC, onde me formei como Técnico em Análise e Desenvolvimento de Sistemas.
-                       Atualmente, estou trilhando um novo capítulo em minha vida acadêmica enquanto curso Ciência da Computação na FMU.
+                <span>&nbsp;Meu nome é Caik Rian, nasci no dia 17/07/2003 e moro em Osasco-SP. 
+                    Desde cedo, meu fascínio pela tecnologia e sistemas de computação me impulsionou a buscar conhecimento na área. 
+                    Iniciei minha jornada acadêmica na ETEC, onde me formei como Técnico em Análise e Desenvolvimento de Sistemas. 
+                    Atualmente, estou trilhando um novo capítulo em minha vida acadêmica enquanto curso Ciência da Computação na FMU e realizo um estagio como analista de sistemas na GVP Digital.
                     </span>
                     <br/>
                 <span>&nbsp;Minha paixão por resolver problemas e criar soluções me motiva a buscar constantemente desafios na área de tecnologia. 
@@ -81,20 +81,9 @@ function Home() {
                         <span id='CursoInst'>Análise e Desenvolvimento de Sistemas</span>
                         <span id='StatusInst'>Concluído</span>
                         <span id='DataInst'>01/2019 até 12/2021</span>
-                    </div>
-                    
+                    </div>      
                 </div>
-                
-                <div className='instituicao'>
-                    <div id='UNIP' className='ImgInstituicao' >
-                        <span id='TitInst'>UNIP</span>
-                        <span id='CursoInst'>Ciência da Computação</span>
-                        <span id='StatusInst'>Trancado</span>
-                        <span id='DataInst'>01/2022 até 06/2022</span>
-                    </div>
-                    
-                </div>
-               
+
                 <div className='instituicao'>
                     <div id='FMU' className='ImgInstituicao'>
                         <span id='TitInst'>FMU</span>
@@ -102,14 +91,15 @@ function Home() {
                         <span id='StatusInst'>Em Andamento</span>
                         <span id='DataInst'>07/2022 até 06/2026</span>
                     </div>
-                    
                 </div>
             </div>
             </article>
+
+            <div id='TitExpProf' className='titulo'>Experiência Profissional</div>
+
             <article id='section4' className='section4'>
-                <div id='TitExpProf' className='titulo'>Experiência Profissional</div>
+
                 <div className='CampoExpProf'>
-                    <div className='ImgExpProf'><img src={Icon_People}></img></div>
                     <div className='DescExpProf'>
                         <span className='TitleExpProf'>Empresa</span>
                         <span>&nbsp;ERP Solutions Ltda.</span>
@@ -124,7 +114,24 @@ function Home() {
                         </span>
                     </div>
                 </div>
-                </article>
+
+                <div className='CampoExpProf'>
+                    <div className='DescExpProf'>
+                        <span className='TitleExpProf'>Empresa</span>
+                        <span>&nbsp;GVP.Digital</span>
+                        <br/>
+                        <span className='TitleExpProf'>Cargo</span>
+                        <span>&nbsp;Estágio em Análise de Sistemas - 08/2024 até o momento</span>
+                        <br/>
+                        <span className='TitleExpProf'>Principais Atividades</span>
+                        <span>&nbsp;Parametrização e configuração de sistemas; 
+                            Ajustes básicos em sistemas CRM e Apoio e esclarecimento de dúvidas em implantação de sistemas;
+                            Desenvolvimento de sistemas, análise de sistemas, processos, qualidade;
+                        </span>
+                    </div>
+                </div>
+
+            </article>
             <article id='section5'className='section5'>
                 <div id='TitHabild' className='titulo'>Habilidades</div>
                 <div id='CampoConhecimento'>
