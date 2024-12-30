@@ -10,12 +10,12 @@ function Footer(){
         </div>
 
         <div class='Links'>
-            <a href="#home">Home</a>
-            <a href="#sobre-mim">Sobre Mim</a>
-            <a href="#experiencia-profissional">Experiência Profissional</a>
-            <a href="#experiencia-academica">Experiência Acadêmica</a>
-            <a href="#habilidades">Habilidades</a>
-            <a href="#projetos">Projetos</a>
+            <a href="/#">Home</a>
+            <a href="/#TitSobreMim">Sobre Mim</a>
+            <a href="/#TitExpProf">Experiência Profissional</a>
+            <a href="/#TitFormAcad">Experiência Acadêmica</a>
+            <a href="/#TitHabild">Habilidades</a>
+            <a href="/Projetos/#">Projetos</a>
         </div>
 
         <div class='SegundaLinha'>
